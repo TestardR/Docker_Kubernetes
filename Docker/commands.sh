@@ -44,3 +44,8 @@ docker exec -it 1302c45c84ee redis-cli
 docker exec -it 1302c45c84ee sh
 // it gives you a shell access start with #
 // to exit ctrl C or ctrl D
+
+// Starting with a shell
+docker run -it busybox sh // on one console
+docker run -it busyhox sh // on another one
+// The two instances will be completely isolated from eachother
