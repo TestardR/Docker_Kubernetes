@@ -39,3 +39,8 @@ docker run redis
 // -t makes all the text shows up pretty
 docker ps
 docker exec -it 1302c45c84ee redis-cli
+
+// Getting shell acess (command prompt access)
+docker exec -it 1302c45c84ee sh
+// it gives you a shell access start with #
+// to exit ctrl C or ctrl D
