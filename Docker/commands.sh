@@ -30,3 +30,4 @@ docker logs 93257f82d20b1ce10107328d0c7cfc3ba56f1408b60f3eb1a0569984200c46ce // 
 docker ps
 docker stop <container_id> // cleaner, has 10s otherwise will be killed
 docker kill <container_id>
+
