@@ -31,3 +31,11 @@ docker ps
 docker stop <container_id> // cleaner, has 10s otherwise will be killed
 docker kill <container_id>
 
+// Multi-command containers
+docker run redis
+// model : docker exec -it <container_id> <command>
+// -it : standard in and standard out 
+// -i we want to attach our terminal to the stdin channel of that new running process 
+// -t makes all the text shows up pretty
+docker ps
+docker exec -it 1302c45c84ee redis-cli
