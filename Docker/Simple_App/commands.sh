@@ -8,3 +8,4 @@ docker run -p 5000:8080 testardr/simple_app
 
 # take a look at the internals
 docker run -it testardr/simple_app sh
+docker exec -it a9fb5387c8d7 sh
