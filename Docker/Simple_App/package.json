@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "name": "simple_app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
