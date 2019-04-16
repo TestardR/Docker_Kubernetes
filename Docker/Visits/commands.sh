@@ -9,3 +9,8 @@ docker-compose up --build
 In our case, we want to run our container : 
 docker-compose up
 
+Launch in background
+docker-compose up -docker
+
+Stop containers
+docker-compose down
