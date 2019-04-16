@@ -4,6 +4,8 @@ services:
   redis-server:
     image: 'redis'
   node-app:
+    # if crash, restart : 'no' / on-failure / unless-stopped
+    restart: always
     # look in the current directory to build container using a dockerfile
     build: .
     ports:
