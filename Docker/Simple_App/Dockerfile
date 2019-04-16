@@ -6,10 +6,13 @@ WORKDIR /usr/app
 
 # Copy stuff to inside *the container*
 # ./ path to folder to copy from my machine relative to build context
-COPY ./ ./
+COPY ./package.json ./
 
 # Install some dependencies
 RUN npm install
+
+# Copy the rest of the files
+COPY ./ ./
 
 # Default command
 CMD ["npm", "start"]
