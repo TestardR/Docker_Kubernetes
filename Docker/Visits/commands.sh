@@ -10,7 +10,10 @@ In our case, we want to run our container :
 docker-compose up
 
 Launch in background
-docker-compose up -docker
+docker-compose up -d
 
 Stop containers
 docker-compose down
+
+Containers status // inside the running directory
+docker-compose ps
