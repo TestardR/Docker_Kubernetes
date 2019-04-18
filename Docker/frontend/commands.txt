@@ -1,0 +1,15 @@
+As we are in developement mode, we want to make use of Dockerfile.dev
+As such: docker build . => it won't work
+
+We want to use : docker build -f Dockerfile.dev . 
+docker run -p 3000:3000 1f8bcf6d8b62 (I had to restart docker)
+
+For Docker to observe any changes in your files : 
+docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app <image_id> // on windows ${pwd}
+docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 1f8bcf6d8b62
+
+// It did not work as 18/04/2019
+docker run -p 3000:3000 -v /${pwd}:/app 79a32c2b9d47
+docker run -p 3000:3000 -v /app/node_module -v ${pwd}:/app 79a32c2b9d47
+
+
