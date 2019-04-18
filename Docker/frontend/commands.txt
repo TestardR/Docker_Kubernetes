@@ -12,4 +12,4 @@ docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 1f8bcf6d8b62
 docker run -p 3000:3000 -v /${pwd}:/app 79a32c2b9d47
 docker run -p 3000:3000 -v /app/node_module -v ${pwd}:/app 79a32c2b9d47
 
-
+// Solution is to move towards docker-compose

@@ -15,5 +15,7 @@ docker-compose up -d
 Stop containers
 docker-compose down
 
-Containers status // inside the running directory
+Containers status // inside the running directory (It did not work as docker presents difficulties dealing with different windows volumes and priviledges.)
 docker-compose ps
+docker-compose build
+docker-compose up
