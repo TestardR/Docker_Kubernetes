@@ -13,3 +13,13 @@ docker run -p 3000:3000 -v /${pwd}:/app 79a32c2b9d47
 docker run -p 3000:3000 -v /app/node_module -v ${pwd}:/app 79a32c2b9d47
 
 // Solution is to move towards docker-compose
+docker-compose build
+docker-compose up
+docker-compose down
+
+// Important to note that it did not work on windows 10
+
+============================================= Production =========================================
+docker build .
+docker un -p 8080:80 <image_id> => localhost:8080
+
