@@ -1,0 +1,7 @@
+kubectl apply -f <filename>
+kubectl apply -f client-pod.yaml
+kubectl apply -f client-node-port.yaml
+
+To check the status of all running pods
+kubectl get pods
+kubectl get services
